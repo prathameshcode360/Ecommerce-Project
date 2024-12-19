@@ -123,3 +123,85 @@ body{
         grid-template-columns: 1fr; /* 1 column on small screens */
     }
 }
+
+/* Testimonials Section */
+.testimonials {
+    background-color: #333;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0; /* Reduced padding even more */
+}
+
+.testimonials h2 {
+    font-size: 2rem; /* Smaller heading size */
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 1.5rem; /* Reduced bottom margin */
+}
+
+.testimonial-boxes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns by default */
+    gap: 1rem; /* Reduced gap even more */
+    justify-items: center;
+}
+
+.testimonial-box {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 1rem; /* Further reduced padding inside each testimonial box */
+    margin: 0.5rem; /* Reduced margin */
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2); /* Smaller shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-box:hover {
+    transform: translateY(-3px); /* Reduced hover effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.testimonial-box p {
+    font-size: 1rem; /* Smaller font size */
+    line-height: 1.5;
+    margin-bottom: 0.8rem; /* Reduced bottom margin */
+}
+
+.testimonial-box h5 {
+    font-size: 0.85rem; /* Smaller font size for names */
+    font-weight: bold;
+    color: #f4b400;
+}
+
+@media (max-width: 1024px) {
+    .testimonial-boxes {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+    }
+}
+
+@media (max-width: 600px) {
+    .testimonial-boxes {
+        grid-template-columns: 1fr; /* 1 column on small screens */
+    }
+}
+/* Footer styles */
+footer {
+    background-color:#fff;
+    color: #333;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.footer p {
+    font-size: 1rem;
+    margin: 0;
+    font-weight: normal;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 600px) {
+    .footer p {
+        font-size: 0.9rem; /* Slightly smaller font on smaller screens */
+    }
+}
